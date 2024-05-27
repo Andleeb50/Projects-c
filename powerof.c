@@ -1,7 +1,7 @@
 //To find power of numbers
 
 #include<stdio.h>
-#include <math.h>
+#include<math.h>
 int main() {
 double x, y, ans;
 
