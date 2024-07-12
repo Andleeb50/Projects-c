@@ -8,7 +8,7 @@ int main() {
 
 double n, ans; //DOUBLE-FLOAT VALUE
 
-printf("Enter the number whose square root is to be found");
+printf("Enter the number whose square root is to be found \n");
 
 scanf("%lf", &n); ans = sqrt(n);
 
