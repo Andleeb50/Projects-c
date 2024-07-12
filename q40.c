@@ -3,7 +3,7 @@
 int main(){
 	
 	char str[100];
-	int i,j;
+	int i;
 	
 	printf("Enter String \n");
 	scanf("%s",str);
@@ -12,10 +12,6 @@ int main(){
 	{
 		i++;
 	}
-	for (j=i; j>=0; j--)
-	{
-		printf("%c",str[j]);
-	}
 	
-	return 0;
+	printf("%d",i);
 }

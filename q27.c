@@ -1,11 +1,17 @@
-//reverse while loop
-int main()
-{int n, i, r;
-printf("enter the number");
-scanf("%d", &n);
-while(n!=0)
-{r=n%10;
-printf("%d", r);
-n=n/10;
-}
+#include <stdio.h>
+
+int main(){
+	
+	int n,r;
+	
+	printf("Enter the natural number");
+	scanf("%d",&n);
+	
+	while (n>=1){
+		r=n%10;
+		printf("%d",r);
+		n=n/10;
+	}
+	
+	return 0;
 }
