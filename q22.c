@@ -14,7 +14,7 @@ int main() {
 
     for (i = 1; i <= n - 2; i++) {
         c = a + b;
-        printf(" %d", c);  // Add space for better readability
+        printf(" %d", c); 
         a = b;
         b = c;
     }
