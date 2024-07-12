@@ -6,7 +6,7 @@ int main()
 {
 int a, b, sum;
 
-printf("enter any two integers to be added"); 
+printf("enter any two integers to be added "); 
 scanf("%d %d", &a, &b) ;
 
 sum=a+b;
