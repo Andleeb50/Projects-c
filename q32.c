@@ -1,6 +1,6 @@
 /* Display the following pattern (using loops):
 
-*****
+****
 ***
 **
 *           */   
