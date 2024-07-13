@@ -1,3 +1,4 @@
+/*Display all even numbers from 1 to 100 [using loop and if]*/
 #include <stdio.h>
 
 int main() {
