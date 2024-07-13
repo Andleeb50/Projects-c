@@ -1,3 +1,10 @@
+/*Display the following pyramid of stars (using loops):
+
+      *
+    *   *
+  *   *   *
+*   *   *   *           */
+
 #include <stdio.h>
 
 int main(){
