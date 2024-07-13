@@ -1,3 +1,4 @@
+//Find product of series: 1 2 3 4 5 .... n
 #include <stdio.h>
 
 int main() {
