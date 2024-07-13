@@ -1,3 +1,5 @@
+//Display contents of a character array
+
 #include <stdio.h>
 
 int main(){
