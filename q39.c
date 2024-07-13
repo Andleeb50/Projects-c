@@ -1,3 +1,4 @@
+//Input a string from the user and display the same
 #include <stdio.h>
 
 int main(){
