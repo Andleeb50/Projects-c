@@ -1,4 +1,4 @@
-//program for reverse and sequence odd numbers
+//program for odd 1 to 100 and 100 to 1
 
 #include<stdio.h>
 
