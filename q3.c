@@ -1,3 +1,4 @@
+//Read two numbers from keyboard and compare them.
 #include <stdio.h>
 
 int main() {
