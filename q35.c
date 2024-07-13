@@ -1,3 +1,4 @@
+//Display contents of an integer array.
 #include <stdio.h>
 
 int main(){
