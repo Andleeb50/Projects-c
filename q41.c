@@ -1,3 +1,5 @@
+/*  Input a string from the user and display it in reverse order  */
+
 #include <stdio.h>
 
 int main(){
