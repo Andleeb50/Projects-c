@@ -1,3 +1,4 @@
+/* Display contents of an integer array in reverse order.   */
 #include <stdio.h>
 
 int main(){
