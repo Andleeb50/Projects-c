@@ -1,8 +1,9 @@
-Display the following pattern (using loops):
+/* Display the following pattern (using loops):
+
     * 
    ** 
   ***
- ****
+ ****        */
 
 
 #include <stdio.h>
