@@ -1,3 +1,5 @@
+//Display table of all integers from 2 to 10
+
 #include <stdio.h>
 int main() {
   int n;
