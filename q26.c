@@ -1,3 +1,5 @@
+//Find sum of series: 1 + 1/2 + 1/4 + 1/6 + ….+ 1/n
+
 #include <stdio.h>
 
 int main()
