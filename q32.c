@@ -1,4 +1,10 @@
-//5 3 2 1
+/* Display the following pattern (using loops):
+
+*****
+***
+**
+*           */   
+  
 #include <stdio.h>
 
 int main(){
