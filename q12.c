@@ -1,3 +1,6 @@
+/*Use switch-case to display Salaam when user enters 1, Aadaab when user enters 2, Hello when user 
+enters 3 and Incorrect Option when user enters any other number*/
+
 #include<stdio.h>
 
 int main() {
@@ -9,9 +12,9 @@ int main() {
     case 1:
     printf("Salaam"); break;
     case 2:
-    printf("Hello"); break;
+    printf("Aadaab"); break;
     case 3: 
-    printf("Satsrikaal"); break;
+    printf("Hello"); break;
     default:
     printf("Incorrect option"); break;
     
