@@ -1,3 +1,5 @@
+/*Display the series: 1 2 3 4 5 1 2 3 4 5 1 2 3 4 5 ....... (n times) [using nesting of loops]*/
+
 #include <stdio.h>
 
 int main(){
