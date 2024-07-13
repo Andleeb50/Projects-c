@@ -1,3 +1,5 @@
+/* Input a string from the user and find its length (without using the string library)  */
+
 #include <stdio.h>
 
 int main(){
