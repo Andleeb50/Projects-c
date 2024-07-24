@@ -1,4 +1,4 @@
-//C program to check whether a no is armstrong or not 
+//Demonstrate use of macros
 #include <stdio.h>
 
     #define AREA(x) PI* x* x
