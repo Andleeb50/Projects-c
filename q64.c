@@ -1,5 +1,5 @@
-
-     #include <stdio.h>
+//display contents of a string in reverse order using pointers
+     #include<stdio.h>
       int main() {
     int a[100], n, i;
     int *p;
