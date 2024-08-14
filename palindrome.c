@@ -8,7 +8,7 @@ printf("Enter the string to be checked \n");
 scanf("%s",&str);
 
 char *p, *q;
-p=&str;
+p=str;
 q=p;
 while(*p != '\0')
 {
