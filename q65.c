@@ -1,4 +1,4 @@
-//Program in C to check wether a string is palindrom3 or not
+//Program in C to check wether a string is palindrome or not using pointers
 #include<stdio.h>
 int main()
 {
