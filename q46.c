@@ -1,42 +1,33 @@
-#include <stdio.h>
-
-void bubbleSort(int a[], int n) {
-    int i, j, temp;
-    for (i = 0; i < n-1; i++) {
-        for (j = 0; j < n-i-1; j++) {
-            if (a[j] > a[j+1]) {
-                // Swap a[j] and a[j+1]
-                temp = a[j];
-                a[j] = a[j+1];
-                a[j+1] = temp;
+//Sort an integer array using Bubble Sort
+#include<stdio.h>
+int main()
+{
+    int arr[100],n,i,j,change;
+    printf("enter length of integer array\n");
+    scanf("%d",&n);
+    printf("Enter the contents of integer array:\n");
+    for(i=0;i<n;i++)
+    {
+        scanf("%d",&arr[i]);
+    }
+    for(i=0;i<n-1;i++)
+    {
+        for(j=0;j<n-1-i;j++)
+        {
+            if(arr[j]>arr[j+1])
+            {
+                change=arr[j];
+                arr[j]=arr[j+1];
+                arr[j+1]=change;
             }
         }
     }
-}
+    printf("the sorted array is:\n"); 
+     for(i=0;i<n;i++)
+     {
+        printf("%d",arr[i]);
+     }
+     printf("\n");
+     return 0;
 
-int main() {
-    int n, i;
-
-    printf("Enter number of elements: ");
-    scanf("%d", &n);
-
-    int a[n];  // Declare the array of size n
-
-    // Input the array elements
-    printf("Enter the elements:\n");
-    for (i = 0; i < n; i++) {
-        scanf("%d", &a[i]);
-    }
-
-    // Sort the array using bubble sort
-    bubbleSort(a, n);
-
-    // Display the sorted array
-    printf("Sorted array: \n");
-    for (i = 0; i < n; i++) {
-        printf("%d ", a[i]);
-    }
-    printf("\n");
-
-    return 0;
 }
