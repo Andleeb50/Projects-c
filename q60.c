@@ -1,45 +1,53 @@
-//store details of students of your class and find the topper
-//store details of students in an array of structure and display the same in tabular form
+/*Program in C to store details of all the students of your class in an array of structure
+and then find the topper of the class*/
 #include <stdio.h>
-struct student
-{
+
+struct student {
     int rollno;
     float marksobt;
     float totalmarks;
-
+    float perc;
 };
-int main()
-{
-    int n,i;
+
+int main() {
+    int n, i;
     struct student s[100];
-    printf("enter the number of students in your class:\n");
-    scanf("%d",&n);
-    for(i=0;i<n;i++)
-    {
-        printf("enter roll number of student %d:\n",i+1);
-        scanf("%d",&s[i].rollno);
-        printf("enter the marks obtained by student %d:\n",i+1);
-        scanf("%f",&s[i].marksobt);
-        printf("enter the total marks:\n");
-        scanf("%f",&s[i].totalmarks);
-
+    
+    printf("Enter the number of students in your class:\n");
+    scanf("%d", &n);
+    
+    for(i = 0; i < n; i++) {
+        printf("Enter roll number of student %d:\n", i + 1);
+        scanf("%d", &s[i].rollno);
+        
+        printf("Enter the marks obtained by student %d:\n", i + 1);
+        scanf("%f", &s[i].marksobt);
+        
+        printf("Enter the total marks:\n");
+        scanf("%f", &s[i].totalmarks);
+        
+        s[i].perc=(s[i].marksobt/s[i].totalmarks)*100;
+        printf("Roll no. %d has %f percent.\n",i+1,s[i].perc);
     }
-    //now to display in tabular format
-    printf("ROLL NUMBER \t MARKS OBTAINED \t TOTAL MARKS\n");
-    for(i=0;i<n;i++)
+    
+    // Display in tabular format
+    printf("ROLL NUMBER\tMARKS OBTAINED\tTOTAL MARKS\tPERCENTAGE\n");
+    
+    for(i = 0; i < n; i++)
     {
-        printf("    %d \t             %.1f \t               %.0f \n", s[i].rollno,s[i].marksobt,s[i].totalmarks);
-
+        printf("%d\t\t %.1f\t\t %.0f\t\t %f\n", s[i].rollno, s[i].marksobt, s[i].totalmarks, s[i].perc);
     }
-    //to find topper as per given data
-    struct student topper=s[0];
-    for(i=0;i<n;i++)
-    {
-        if(s[i].marksobt>topper.marksobt)
+    
+    // Find topper as per given data
+    struct student topper = s[0];
+    for(i = 1; i < n; i++) {  // Start from 1 since topper is initialized with s[0]
+        if(s[i].perc > topper.perc)
         {
-            topper=s[i+1];
+           topper = s[i];
         }
     }
-    printf("the topper of class is roll number %d with marks obtained %.1f",topper.rollno,topper.marksobt);
+    
+    printf("The topper of the class is roll number %d with %f percent.\n", topper.rollno,topper.perc);
+    
     return 0;
 }
