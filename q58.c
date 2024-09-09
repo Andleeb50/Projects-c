@@ -14,7 +14,7 @@ int main() {
     scanf("%d", &S.rollno);
 
     printf("Enter name: ");
-    scanf("%s", S.name);
+    scanf("%s", &S.name);
 
     printf("Enter marks: ");
     scanf("%f", &S.marks);
