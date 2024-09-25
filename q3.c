@@ -6,7 +6,7 @@ int main() {
 
     // Reading two numbers from the keyboard
     printf("Enter the first number: ");
-    scanf("%d", &num1,&num2);
+    scanf("%d %d", &num1,&num2);
 
 
     // Comparing the numbers
